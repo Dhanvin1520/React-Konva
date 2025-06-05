@@ -1,0 +1,77 @@
+.sticker-panel {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 16px;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .sticker-panel h2 {
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .sticker-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .sticker-button {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+    color: var(--gray-700);
+  }
+  
+  .sticker-button:hover {
+    background-color: var(--gray-200);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .sticker-button:active {
+    transform: translateY(0);
+  }
+  
+  .sticker-emoji {
+    font-size: 24px;
+    margin-right: 12px;
+  }
+  
+  .sticker-name {
+    font-size: 14px;
+  }
+  
+  .instructions {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-300);
+  }
+  
+  .instructions p {
+    font-size: 14px;
+    color: var(--gray-600);
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .sticker-buttons {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .sticker-button {
+      width: auto;
+    }
+  }

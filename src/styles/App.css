@@ -1,0 +1,170 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-color: #4361EE;
+    --accent-color: #F72585;
+    --light-color: #F8F9FA;
+    --dark-color: #212529;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --success-color: #38b000;
+    --warning-color: #ffb700;
+    --error-color: #d90429;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .app-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray-300);
+  }
+  
+  header h1 {
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  header p {
+    color: var(--gray-600);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .canvas-container {
+    margin-bottom: 20px;
+  }
+  
+  .canvas-wrapper {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+  }
+  
+  .konva-stage {
+    border: 2px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+  }
+  
+  .controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .options-panel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .download-btn {
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    display: block;
+    width: 100%;
+  }
+  
+  .download-btn:hover {
+    background-color: #3a56d4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .download-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-toggle {
+    padding: 8px 16px;
+    background-color: var(--gray-200);
+    color: var(--gray-700);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .grid-toggle.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+  }
+  
+
+  @media (max-width: 768px) {
+    .canvas-wrapper {
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    .konva-stage {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    main {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .canvas-container {
+      flex: 1;
+      margin-bottom: 0;
+    }
+    
+    .controls-container {
+      width: 250px;
+    }
+  }
