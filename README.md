@@ -1,7 +1,7 @@
 # Sticker Canvas App
 
 This interactive sticker canvas application allows users to add emoji stickers to a canvas, drag them around, and download the result as a PNG image.
-
+##Live Link: https://stickercanvas.netlify.app/
 ## Features
 
 - Interactive 600×400 Konva canvas
