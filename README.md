@@ -4,7 +4,7 @@ This interactive sticker canvas application allows users to add emoji stickers t
 
 
 ##Live Link: https://stickercanvas.netlify.app/
-##Loom:https://www.loom.com/share/e830c4da13a9421fb9f89cc75ccf4cf5?sid=4ed6023f-fcf1-443e-a696
+##Loom:https://www.loom.com/share/e830c4da13a94
 ## Features
 
 - Interactive 600×400 Konva canvas
